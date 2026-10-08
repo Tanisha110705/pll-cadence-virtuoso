@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 500" width="980" height="500" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">pfd-architecture.svg</title>
+  <desc id="d">Functional view of the PFD: UP and DOWN halves with a shared NMOS reset network and a state table.</desc>
+  <defs><marker id="a15803d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#15803d"/></marker><marker id="a1d4ed8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker><marker id="a1f2937" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker><marker id="a334155" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a9ca3af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9ca3af"/></marker><marker id="ac2410c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker></defs>
+  <rect x="0.5" y="0.5" width="979" height="499" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="24" y="36" font-size="18" font-weight="bold" fill="#1f2937" text-anchor="start">Phase-Frequency Detector — functional view</text>
+  <text x="24" y="58" font-size="12.5" font-weight="normal" fill="#5b6472" text-anchor="start">Transistor-level dynamic CMOS PFD (device names from the hand-drawn schematic); functional abstraction, not a netlist</text>
+  <rect x="60" y="100" width="330" height="110" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="225.0" y="137.25" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">UP half</text>
+  <text x="225.0" y="154.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">precharge PMOS P1, P2 + NMOS evaluate</text>
+  <text x="225.0" y="170.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">output buffers INV1 → INV2</text>
+  <text x="225.0" y="185.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">edge on CLKREF sets UP</text>
+  <rect x="60" y="300" width="330" height="110" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="225.0" y="337.25" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">DOWN half</text>
+  <text x="225.0" y="354.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">precharge PMOS P3, P4 + NMOS evaluate</text>
+  <text x="225.0" y="370.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">output buffers INV3 → INV4</text>
+  <text x="225.0" y="385.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">edge on CLKVCO sets DOWN</text>
+  <rect x="470" y="200" width="200" height="110" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="570.0" y="237.25" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Reset network</text>
+  <text x="570.0" y="254.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">NMOS stack N1–N4</text>
+  <text x="570.0" y="270.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">fires when UP and DOWN</text>
+  <text x="570.0" y="285.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">are both high</text>
+  <polyline points="14,155 58,155" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="14" y="145" font-size="11.5" font-weight="bold" fill="#1d4ed8" text-anchor="start">CLKREF</text>
+  <polyline points="14,355 58,355" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="14" y="345" font-size="11.5" font-weight="bold" fill="#1d4ed8" text-anchor="start">CLKVCO</text>
+  <polyline points="390,155 700,155" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linejoin="round" marker-end="url(#a7c3aed)"/>
+  <text x="706" y="159" font-size="13" font-weight="bold" fill="#7c3aed" text-anchor="start">UP</text>
+  <polyline points="390,355 700,355" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linejoin="round" marker-end="url(#a7c3aed)"/>
+  <text x="706" y="359" font-size="13" font-weight="bold" fill="#7c3aed" text-anchor="start">DOWN</text>
+  <circle cx="570" cy="155" r="3.5" fill="#7c3aed"/><circle cx="600" cy="355" r="3.5" fill="#7c3aed"/>
+  <polyline points="570,155 570,198" fill="none" stroke="#7c3aed" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#a7c3aed)"/>
+  <polyline points="600,355 600,312" fill="none" stroke="#7c3aed" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#a7c3aed)"/>
+  <polyline points="470,230 430,230 430,180 392,180" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#a334155)"/>
+  <polyline points="470,280 430,280 430,330 392,330" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#a334155)"/>
+  <text x="436" y="262" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="start">reset</text>
+  <text x="760" y="108" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="start">Behaviour (three-state PFD)</text>
+  <text x="760" y="136" font-size="11.5" font-weight="bold" fill="#1f2937" text-anchor="start">Event</text>
+  <text x="910" y="136" font-size="11.5" font-weight="bold" fill="#1f2937" text-anchor="middle">UP</text>
+  <text x="950" y="136" font-size="11.5" font-weight="bold" fill="#1f2937" text-anchor="middle">DOWN</text>
+  <line x1="760" y1="146" x2="960" y2="146" stroke="#e5e7eb"/>
+  <text x="760" y="166" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="start">idle / after reset</text>
+  <text x="910" y="166" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="middle">0</text>
+  <text x="950" y="166" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="middle">0</text>
+  <line x1="760" y1="176" x2="960" y2="176" stroke="#e5e7eb"/>
+  <text x="760" y="196" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="start">CLKREF edge first</text>
+  <text x="910" y="196" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="middle">1</text>
+  <text x="950" y="196" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="middle">0</text>
+  <line x1="760" y1="206" x2="960" y2="206" stroke="#e5e7eb"/>
+  <text x="760" y="226" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="start">CLKVCO edge first</text>
+  <text x="910" y="226" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="middle">0</text>
+  <text x="950" y="226" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="middle">1</text>
+  <line x1="760" y1="236" x2="960" y2="236" stroke="#e5e7eb"/>
+  <text x="760" y="256" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="start">second edge arrives</text>
+  <text x="910" y="256" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="middle">1 → 0</text>
+  <text x="950" y="256" font-size="11.5" font-weight="normal" fill="#1f2937" text-anchor="middle">1 → 0</text>
+  <text x="760" y="300" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="start">Both outputs are high only for the</text>
+  <text x="760" y="316" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="start">reset-path delay. This short overlap</text>
+  <text x="760" y="332" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="start">keeps small phase errors from being</text>
+  <text x="760" y="348" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="start">lost (dead zone).</text>
+  <rect x="40" y="430" width="900" height="50" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="56" y="452" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">Design aim (handwritten in the report): a “2π” detection-range PFD in SCL 180 nm. Detection range and dead zone were not measured.</text>
+  <text x="56" y="470" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">Layout note (report): asymmetric clock routing adds artificial phase delay and widens the dead zone.</text>
+</svg>

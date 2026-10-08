@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 360" width="1080" height="360" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">divider-architecture.svg</title>
+  <desc id="d">Seven cascaded toggle flip-flops, each dividing by two, giving fin/128 at the final Q output.</desc>
+  <defs><marker id="a15803d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#15803d"/></marker><marker id="a1d4ed8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker><marker id="a1f2937" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker><marker id="a334155" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a9ca3af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9ca3af"/></marker><marker id="ac2410c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker></defs>
+  <rect x="0.5" y="0.5" width="1079" height="359" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="24" y="36" font-size="18" font-weight="bold" fill="#1f2937" text-anchor="start">Divide-by-128 feedback divider — 7-stage ripple counter (cell divided_by_128counter)</text>
+  <text x="24" y="58" font-size="12.5" font-weight="normal" fill="#5b6472" text-anchor="start">Each stage is a positive-edge D flip-flop in toggle mode (D tied to Q̅); each stage output clocks the next stage</text>
+  <polyline points="20,170 108,170" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="20" y="160" font-size="11.5" font-weight="bold" fill="#1d4ed8" text-anchor="start">clk (fin)</text>
+  <rect x="110" y="130" width="100" height="80" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="160.0" y="167.0" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">DFF 1</text>
+  <text x="160.0" y="185.0" font-size="12" font-weight="normal" fill="#5b6472" text-anchor="middle">÷2</text>
+  <polyline points="200,210 200,232 120,232 120,212" fill="none" stroke="#9ca3af" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#a9ca3af)"/>
+  <text x="160.0" y="248" font-size="10.5" font-weight="normal" fill="#5b6472" text-anchor="middle">Q̅ → D</text>
+  <polyline points="210,170 243,170" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="227" y="160" font-size="10.5" font-weight="bold" fill="#1d4ed8" text-anchor="middle">net1</text>
+  <text x="160.0" y="282" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">fin/2</text>
+  <rect x="245" y="130" width="100" height="80" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="295.0" y="167.0" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">DFF 2</text>
+  <text x="295.0" y="185.0" font-size="12" font-weight="normal" fill="#5b6472" text-anchor="middle">÷2</text>
+  <polyline points="335,210 335,232 255,232 255,212" fill="none" stroke="#9ca3af" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#a9ca3af)"/>
+  <text x="295.0" y="248" font-size="10.5" font-weight="normal" fill="#5b6472" text-anchor="middle">Q̅ → D</text>
+  <polyline points="345,170 378,170" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="362" y="160" font-size="10.5" font-weight="bold" fill="#1d4ed8" text-anchor="middle">net2</text>
+  <text x="295.0" y="282" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">fin/4</text>
+  <rect x="380" y="130" width="100" height="80" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="430.0" y="167.0" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">DFF 3</text>
+  <text x="430.0" y="185.0" font-size="12" font-weight="normal" fill="#5b6472" text-anchor="middle">÷2</text>
+  <polyline points="470,210 470,232 390,232 390,212" fill="none" stroke="#9ca3af" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#a9ca3af)"/>
+  <text x="430.0" y="248" font-size="10.5" font-weight="normal" fill="#5b6472" text-anchor="middle">Q̅ → D</text>
+  <polyline points="480,170 513,170" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="497" y="160" font-size="10.5" font-weight="bold" fill="#1d4ed8" text-anchor="middle">net3</text>
+  <text x="430.0" y="282" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">fin/8</text>
+  <rect x="515" y="130" width="100" height="80" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="565.0" y="167.0" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">DFF 4</text>
+  <text x="565.0" y="185.0" font-size="12" font-weight="normal" fill="#5b6472" text-anchor="middle">÷2</text>
+  <polyline points="605,210 605,232 525,232 525,212" fill="none" stroke="#9ca3af" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#a9ca3af)"/>
+  <text x="565.0" y="248" font-size="10.5" font-weight="normal" fill="#5b6472" text-anchor="middle">Q̅ → D</text>
+  <polyline points="615,170 648,170" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="632" y="160" font-size="10.5" font-weight="bold" fill="#1d4ed8" text-anchor="middle">net4</text>
+  <text x="565.0" y="282" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">fin/16</text>
+  <rect x="650" y="130" width="100" height="80" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="700.0" y="167.0" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">DFF 5</text>
+  <text x="700.0" y="185.0" font-size="12" font-weight="normal" fill="#5b6472" text-anchor="middle">÷2</text>
+  <polyline points="740,210 740,232 660,232 660,212" fill="none" stroke="#9ca3af" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#a9ca3af)"/>
+  <text x="700.0" y="248" font-size="10.5" font-weight="normal" fill="#5b6472" text-anchor="middle">Q̅ → D</text>
+  <polyline points="750,170 783,170" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="767" y="160" font-size="10.5" font-weight="bold" fill="#1d4ed8" text-anchor="middle">net8</text>
+  <text x="700.0" y="282" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">fin/32</text>
+  <rect x="785" y="130" width="100" height="80" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="835.0" y="167.0" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">DFF 6</text>
+  <text x="835.0" y="185.0" font-size="12" font-weight="normal" fill="#5b6472" text-anchor="middle">÷2</text>
+  <polyline points="875,210 875,232 795,232 795,212" fill="none" stroke="#9ca3af" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#a9ca3af)"/>
+  <text x="835.0" y="248" font-size="10.5" font-weight="normal" fill="#5b6472" text-anchor="middle">Q̅ → D</text>
+  <polyline points="885,170 918,170" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="902" y="160" font-size="10.5" font-weight="bold" fill="#1d4ed8" text-anchor="middle">net11</text>
+  <text x="835.0" y="282" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">fin/64</text>
+  <rect x="920" y="130" width="100" height="80" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="970.0" y="167.0" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">DFF 7</text>
+  <text x="970.0" y="185.0" font-size="12" font-weight="normal" fill="#5b6472" text-anchor="middle">÷2</text>
+  <polyline points="1010,210 1010,232 930,232 930,212" fill="none" stroke="#9ca3af" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#a9ca3af)"/>
+  <text x="970.0" y="248" font-size="10.5" font-weight="normal" fill="#5b6472" text-anchor="middle">Q̅ → D</text>
+  <polyline points="1020,170 1060,170" fill="none" stroke="#15803d" stroke-width="2" stroke-linejoin="round" marker-end="url(#a15803d)"/>
+  <text x="1028" y="160" font-size="10.5" font-weight="bold" fill="#15803d" text-anchor="start">Q</text>
+  <text x="970.0" y="282" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">fin/128</text>
+  <rect x="40" y="300" width="1000" height="46" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="56" y="320" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">fout = fin / 2^7 = fin / 128 (report: 50 % duty cycle at Q).  Ripple: stage k switches only after k accumulated clock-to-Q delays,</text>
+  <text x="56" y="337" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">so the final edge lags the input edge. Each DFF = 6 NAND gates (NAND2/NAND3 cells). Net names as in the transient plot.</text>
+</svg>

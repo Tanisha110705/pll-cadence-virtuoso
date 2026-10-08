@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">pll-loop.svg</title>
+  <desc id="d">Vertical closed loop: PFD, charge pump, loop filter, VCO, divide-by-128 and feedback path to the PFD.</desc>
+  <defs><marker id="a15803d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#15803d"/></marker><marker id="a1d4ed8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker><marker id="a1f2937" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker><marker id="a334155" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a9ca3af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9ca3af"/></marker><marker id="ac2410c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker></defs>
+  <rect x="0.5" y="0.5" width="799" height="799" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="24" y="36" font-size="18" font-weight="bold" fill="#1f2937" text-anchor="start">Closed-loop signal flow</text>
+  <text x="24" y="58" font-size="12.5" font-weight="normal" fill="#5b6472" text-anchor="start">Signal names follow the Virtuoso testbenches (CLKREF, UP, DOWN, V_CP, Vout)</text>
+  <rect x="230" y="90" width="250" height="72" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="355.0" y="123.75" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">PFD</text>
+  <text x="355.0" y="141.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">compares CLKREF with FB edges</text>
+  <rect x="230" y="215" width="250" height="72" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="355.0" y="248.75" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Charge Pump</text>
+  <text x="355.0" y="266.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">UP → source I_CP · DOWN → sink I_CP</text>
+  <rect x="230" y="340" width="250" height="72" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="355.0" y="373.75" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Loop Filter</text>
+  <text x="355.0" y="391.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">integrates I_CP → V_CP (R, C1 ‖ C2)</text>
+  <rect x="230" y="465" width="250" height="72" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="355.0" y="498.75" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">VCO</text>
+  <text x="355.0" y="516.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">V_CP sets stage delay → frequency</text>
+  <rect x="230" y="590" width="250" height="72" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="355.0" y="623.75" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">÷128 Divider</text>
+  <text x="355.0" y="641.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">seven ÷2 toggle stages</text>
+  <polyline points="355.0,162 355.0,213" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linejoin="round" marker-end="url(#a7c3aed)"/>
+  <text x="365.0" y="192" font-size="12" font-weight="bold" fill="#7c3aed" text-anchor="start">UP / DOWN pulses</text>
+  <polyline points="355.0,287 355.0,338" fill="none" stroke="#c2410c" stroke-width="2" stroke-linejoin="round" marker-end="url(#ac2410c)"/>
+  <text x="365.0" y="317" font-size="12" font-weight="bold" fill="#c2410c" text-anchor="start">I_CP (charge / discharge)</text>
+  <polyline points="355.0,412 355.0,463" fill="none" stroke="#c2410c" stroke-width="2" stroke-linejoin="round" marker-end="url(#ac2410c)"/>
+  <text x="365.0" y="442" font-size="12" font-weight="bold" fill="#c2410c" text-anchor="start">V_CP (control voltage)</text>
+  <polyline points="355.0,537 355.0,588" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="365.0" y="567" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="start">Vout (VCO clock)</text>
+  <polyline points="60,126 228,126" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="60" y="116" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="start">CLKREF</text>
+  <text x="60" y="146" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="start">Fref = 20 MHz*</text>
+  <circle cx="355.0" cy="563" r="3.5" fill="#1d4ed8"/>
+  <polyline points="355.0,563 60,563" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="64" y="553" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="start">PLL output Vout</text>
+  <text x="64" y="580" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="start">≈2.56 GHz (reported)</text>
+  <polyline points="480,626 620,626 620,126 482,126" fill="none" stroke="#15803d" stroke-width="2" stroke-linejoin="round" marker-end="url(#a15803d)"/>
+  <text x="632" y="380" font-size="12" font-weight="bold" fill="#15803d" text-anchor="start">FB = Vout / 128</text>
+  <text x="632" y="398" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="start">(CLKVCO at the PFD)</text>
+  <rect x="40" y="690" width="720" height="88" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="56" y="714" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">Negative feedback: if FB lags CLKREF, UP dominates → V_CP rises → VCO speeds up → FB catches up.</text>
+  <text x="56" y="736" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">If FB leads, DOWN dominates → V_CP falls → VCO slows. Equilibrium: f(Vout) = 128 × Fref.</text>
+  <text x="56" y="758" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="start">* design value from the report.  Settling of V_CP is shown in simulations/pll; no lock-time / phase-error measurement exists.</text>
+</svg>

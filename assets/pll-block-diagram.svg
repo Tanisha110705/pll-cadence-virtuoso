@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 470" width="1040" height="470" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">pll-block-diagram.svg</title>
+  <desc id="d">Reference clock to PFD, charge pump, second-order loop filter, current-starved ring VCO, output, and divide-by-128 feedback to the PFD.</desc>
+  <defs><marker id="a15803d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#15803d"/></marker><marker id="a1d4ed8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker><marker id="a1f2937" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker><marker id="a334155" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a9ca3af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9ca3af"/></marker><marker id="ac2410c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker></defs>
+  <rect x="0.5" y="0.5" width="1039" height="469" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="24" y="36" font-size="18" font-weight="bold" fill="#1f2937" text-anchor="start">Charge-pump PLL — top-level architecture (cell pll_arch)</text>
+  <text x="24" y="58" font-size="12.5" font-weight="normal" fill="#5b6472" text-anchor="start">Schematic-level integration in SCL 180 nm CMOS · Cadence Virtuoso · values from the project report</text>
+  <rect x="24" y="142" width="110" height="60" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="79.0" y="169.75" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">CLK_REF</text>
+  <text x="79.0" y="187.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">Fref = 20 MHz*</text>
+  <rect x="180" y="120" width="130" height="104" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="245.0" y="154.25" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">PFD</text>
+  <text x="245.0" y="171.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">dynamic CMOS</text>
+  <text x="245.0" y="187.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">UP/DOWN outputs</text>
+  <text x="245.0" y="202.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">shared reset</text>
+  <rect x="360" y="120" width="150" height="104" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="435.0" y="154.25" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Charge Pump</text>
+  <text x="435.0" y="171.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">PMOS source /</text>
+  <text x="435.0" y="187.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">NMOS sink, mirrors</text>
+  <text x="435.0" y="202.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">I_CP 100–150 µA*</text>
+  <rect x="560" y="120" width="160" height="104" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="640.0" y="154.25" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Loop Filter</text>
+  <text x="640.0" y="171.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">R = 1 kΩ + C1 = 227 pF</text>
+  <text x="640.0" y="187.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">in series, ‖ C2 = 35 pF*</text>
+  <text x="640.0" y="202.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">2nd-order passive</text>
+  <rect x="770" y="120" width="130" height="104" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="835.0" y="154.25" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">VCO</text>
+  <text x="835.0" y="171.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">3-stage current-</text>
+  <text x="835.0" y="187.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">starved ring</text>
+  <text x="835.0" y="202.75" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">0.107–4.21 GHz</text>
+  <polyline points="134,172.0 178,172.0" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <polyline points="310,154.0 358,154.0" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linejoin="round" marker-end="url(#a7c3aed)"/>
+  <polyline points="310,190.0 358,190.0" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linejoin="round" marker-end="url(#a7c3aed)"/>
+  <text x="334" y="148.0" font-size="11" font-weight="bold" fill="#7c3aed" text-anchor="middle">UP</text>
+  <text x="334" y="206.0" font-size="11" font-weight="bold" fill="#7c3aed" text-anchor="middle">DN</text>
+  <polyline points="510,172.0 558,172.0" fill="none" stroke="#c2410c" stroke-width="2" stroke-linejoin="round" marker-end="url(#ac2410c)"/>
+  <text x="534" y="164.0" font-size="11" font-weight="bold" fill="#c2410c" text-anchor="middle">I_CP</text>
+  <polyline points="720,172.0 768,172.0" fill="none" stroke="#c2410c" stroke-width="2" stroke-linejoin="round" marker-end="url(#ac2410c)"/>
+  <text x="744" y="164.0" font-size="11" font-weight="bold" fill="#c2410c" text-anchor="middle">V_CP</text>
+  <polyline points="900,172.0 1012,172.0" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="968" y="146.0" font-size="11.5" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Vout</text>
+  <text x="968" y="162.0" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="middle">≈2.56 GHz†</text>
+  <circle cx="935" cy="172.0" r="3.5" fill="#1d4ed8"/>
+  <polyline points="935,172.0 935,348 612,348" fill="none" stroke="#15803d" stroke-width="2" stroke-linejoin="round" marker-end="url(#a15803d)"/>
+  <rect x="400" y="310" width="210" height="76" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="505.0" y="338.0" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">÷128 Divider</text>
+  <text x="505.0" y="355.5" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">7 toggle DFF stages (D = Q̅)</text>
+  <text x="505.0" y="371.0" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">ripple: 2^7 = 128</text>
+  <polyline points="400,348 245,348 245,226" fill="none" stroke="#15803d" stroke-width="2" stroke-linejoin="round" marker-end="url(#a15803d)"/>
+  <text x="330" y="340" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle">FB = Vout / 128</text>
+  <polyline points="24,420 60,420" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a1d4ed8)"/>
+  <text x="68" y="424" font-size="12" font-weight="normal" fill="#5b6472" text-anchor="start">clock path</text>
+  <polyline points="239,420 275,420" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linejoin="round" marker-end="url(#a7c3aed)"/>
+  <text x="283" y="424" font-size="12" font-weight="normal" fill="#5b6472" text-anchor="start">PFD pulses (UP/DN)</text>
+  <polyline points="454,420 490,420" fill="none" stroke="#c2410c" stroke-width="2" stroke-linejoin="round" marker-end="url(#ac2410c)"/>
+  <text x="498" y="424" font-size="12" font-weight="normal" fill="#5b6472" text-anchor="start">analog control path</text>
+  <polyline points="669,420 705,420" fill="none" stroke="#15803d" stroke-width="2" stroke-linejoin="round" marker-end="url(#a15803d)"/>
+  <text x="713" y="424" font-size="12" font-weight="normal" fill="#5b6472" text-anchor="start">divided feedback</text>
+  <text x="24" y="452" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="start">* design values specified in the report’s PLL aim.  † output frequency recorded in the report (equals 128 × 20 MHz). Not a measured lock characterization.</text>
+</svg>

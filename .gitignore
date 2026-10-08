@@ -1,0 +1,32 @@
+# Cadence / Virtuoso session and lock files
+CDS.log*
+*.cdslck
+*.cdslck.*
+libManager.log*
+.cadence/
+panic*.log
+
+# Simulation output (Spectre / ADE)
+simulation/
+psf/
+*.raw
+*.log.bak
+spectre.out
+
+# Calibre / extraction run directories
+svdb/
+*.drc.results
+*.drc.summary
+*.lvs.report
+*.pex.netlist
+
+# Do not commit foundry PDK / technology / rule-deck files
+*.tf
+*.lyp
+*_DRC.header*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*~
+*.swp

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" width="920" height="520" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">charge-pump-architecture.svg</title>
+  <desc id="d">Charge pump with reference current mirrored to a PMOS source and NMOS sink, switched by UP and DOWN, driving the loop-filter node.</desc>
+  <defs><marker id="a15803d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#15803d"/></marker><marker id="a1d4ed8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker><marker id="a1f2937" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker><marker id="a334155" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a9ca3af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9ca3af"/></marker><marker id="ac2410c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker></defs>
+  <rect x="0.5" y="0.5" width="919" height="519" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="24" y="36" font-size="18" font-weight="bold" fill="#1f2937" text-anchor="start">Charge pump — functional view (cell charge_pump)</text>
+  <text x="24" y="58" font-size="12.5" font-weight="normal" fill="#5b6472" text-anchor="start">Schematic: 13 instances = 12 MOSFETs (incl. a 2-transistor inverter on UP) + 1 ideal reference current source</text>
+  <line x1="60" y1="96" x2="640" y2="96" stroke="#334155" stroke-width="2"/><line x1="60" y1="440" x2="640" y2="440" stroke="#334155" stroke-width="2"/>
+  <text x="64" y="88" font-size="11.5" font-weight="bold" fill="#1f2937" text-anchor="start">VDD</text>
+  <text x="64" y="458" font-size="11.5" font-weight="bold" fill="#1f2937" text-anchor="start">GND</text>
+  <rect x="90" y="120" width="170" height="60" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="175.0" y="146.75" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="middle">PMOS mirror</text>
+  <text x="175.0" y="164.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">reference side</text>
+  <rect x="90" y="220" width="170" height="60" rx="8" fill="#fff" stroke="#334155" stroke-width="1.6"/>
+  <text x="175.0" y="246.75" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="middle">I_ref</text>
+  <text x="175.0" y="264.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">ideal current source</text>
+  <rect x="90" y="330" width="170" height="60" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="175.0" y="356.75" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="middle">NMOS mirror</text>
+  <text x="175.0" y="374.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">reference side</text>
+  <polyline points="175,96 175,118" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+  <polyline points="175,180 175,218" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+  <polyline points="175,280 175,328" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+  <polyline points="175,390 175,440" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+  <rect x="400" y="112" width="170" height="56" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="485.0" y="136.75" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="middle">PMOS source</text>
+  <text x="485.0" y="154.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">stacked mirror devices</text>
+  <rect x="400" y="186" width="170" height="44" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.6"/>
+  <text x="485.0" y="212.5" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="middle">UP switch</text>
+  <rect x="400" y="296" width="170" height="44" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.6"/>
+  <text x="485.0" y="322.5" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="middle">DOWN switch</text>
+  <rect x="400" y="358" width="170" height="56" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="485.0" y="382.75" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="middle">NMOS sink</text>
+  <text x="485.0" y="400.25" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">stacked mirror devices</text>
+  <polyline points="485,96 485,110" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+  <polyline points="485,168 485,184" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+  <polyline points="485,230 485,262" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+  <polyline points="485,272 485,294" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+  <polyline points="485,340 485,356" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+  <polyline points="485,414 485,440" fill="none" stroke="#334155" stroke-width="1.6" stroke-linejoin="round"/>
+  <circle cx="485" cy="267" r="4" fill="#c2410c"/>
+  <polyline points="260,150 398,150" fill="none" stroke="#9ca3af" stroke-width="1.4" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#a9ca3af)"/>
+  <polyline points="260,370 398,370" fill="none" stroke="#9ca3af" stroke-width="1.4" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#a9ca3af)"/>
+  <text x="330" y="142" font-size="10.5" font-weight="normal" fill="#5b6472" text-anchor="middle">mirror</text>
+  <text x="330" y="362" font-size="10.5" font-weight="normal" fill="#5b6472" text-anchor="middle">mirror</text>
+  <polyline points="620,208 572,208" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linejoin="round" marker-end="url(#a7c3aed)"/>
+  <text x="626" y="212" font-size="11.5" font-weight="bold" fill="#7c3aed" text-anchor="start">UP (via inverter M11/M12)</text>
+  <polyline points="620,318 572,318" fill="none" stroke="#7c3aed" stroke-width="2" stroke-linejoin="round" marker-end="url(#a7c3aed)"/>
+  <text x="626" y="322" font-size="11.5" font-weight="bold" fill="#7c3aed" text-anchor="start">DOWN</text>
+  <polyline points="485,267 700,267" fill="none" stroke="#c2410c" stroke-width="2" stroke-linejoin="round" marker-end="url(#ac2410c)"/>
+  <text x="706" y="262" font-size="12" font-weight="bold" fill="#c2410c" text-anchor="start">Out → loop filter</text>
+  <text x="706" y="280" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="start">(V_CP in the PLL)</text>
+  <polyline points="270,250 270,290" fill="none" stroke="#c2410c" stroke-width="1.4" stroke-linejoin="round" marker-end="url(#ac2410c)"/>
+  <text x="280" y="275" font-size="10.5" font-weight="normal" fill="#c2410c" text-anchor="start">reference current</text>
+  <rect x="40" y="462" width="840" height="44" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="56" y="481" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">UP: PMOS branch sources I_CP → Out ramps up.  DOWN: NMOS branch sinks I_CP → Out ramps down.  Neither: high-impedance hold.</text>
+  <text x="56" y="498" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="start">Exact switch placement inside each stacked branch is not resolvable from the screenshots — see schematics/charge-pump.</text>
+</svg>

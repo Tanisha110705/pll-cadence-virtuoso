@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">layout-flow.svg</title>
+  <desc id="d">Leaf cells to block layouts to top-level pll_arch, each checked with Calibre DRC; only density rules flagged; LVS and extraction not performed.</desc>
+  <defs><marker id="a15803d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#15803d"/></marker><marker id="a1d4ed8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker><marker id="a1f2937" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker><marker id="a334155" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a9ca3af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9ca3af"/></marker><marker id="ac2410c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker></defs>
+  <rect x="0.5" y="0.5" width="999" height="439" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="24" y="36" font-size="18" font-weight="bold" fill="#1f2937" text-anchor="start">Physical implementation &amp; verification flow</text>
+  <text x="24" y="58" font-size="12.5" font-weight="normal" fill="#5b6472" text-anchor="start">Bottom-up custom layout in SCL 180 nm (ts018_scl_prim) — every cell was run through Calibre DRC</text>
+  <text x="30" y="96" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="start">Leaf cells</text>
+  <rect x="30" y="108" width="200" height="44" rx="6" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="130.0" y="134.25" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">inverter (PFD)</text>
+  <rect x="30" y="166" width="200" height="44" rx="6" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="130.0" y="192.25" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">vco_inverter</text>
+  <rect x="30" y="224" width="200" height="44" rx="6" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="130.0" y="250.25" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">nand_2</text>
+  <rect x="30" y="282" width="200" height="44" rx="6" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="130.0" y="308.25" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">nand_3</text>
+  <text x="270" y="96" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="start">Blocks</text>
+  <rect x="270" y="108" width="250" height="44" rx="6" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="395.0" y="134.25" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">pfd_implement</text>
+  <rect x="270" y="166" width="250" height="44" rx="6" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="395.0" y="192.25" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">vco_layout</text>
+  <rect x="270" y="224" width="250" height="44" rx="6" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="395.0" y="250.25" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">charge_pump</text>
+  <rect x="270" y="282" width="250" height="44" rx="6" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="395.0" y="308.25" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">d_ff → divided_by_128counter</text>
+  <text x="560" y="96" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="start">Top level</text>
+  <rect x="560" y="108" width="160" height="44" rx="6" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="640.0" y="134.25" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="middle">pll_arch</text>
+  <polyline points="232,200 268,200" fill="none" stroke="#334155" stroke-width="2" stroke-linejoin="round" marker-end="url(#a334155)"/>
+  <polyline points="522,200 540,200 540,130 558,130" fill="none" stroke="#334155" stroke-width="2" stroke-linejoin="round" marker-end="url(#a334155)"/>
+  <rect x="760" y="108" width="210" height="104" rx="8" fill="#f4f7fb" stroke="#334155" stroke-width="1.6"/>
+  <text x="865.0" y="142.5" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">Calibre DRC</text>
+  <text x="865.0" y="159.5" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="middle">run per cell (10 runs)</text>
+  <text x="865.0" y="174.5" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="middle">1 result per run:</text>
+  <text x="865.0" y="189.5" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="middle">density / coverage rule</text>
+  <polyline points="720,130 758,140" fill="none" stroke="#334155" stroke-width="2" stroke-linejoin="round" marker-end="url(#a334155)"/>
+  <rect x="760" y="232" width="210" height="76" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.6"/>
+  <text x="865.0" y="259.5" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="middle">Flagged rules</text>
+  <text x="865.0" y="276.5" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="middle">GC.C.1  (9 cells)</text>
+  <text x="865.0" y="291.5" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="middle">M2.C.1  (vco_layout)</text>
+  <polyline points="865,212 865,230" fill="none" stroke="#334155" stroke-width="2" stroke-linejoin="round" marker-end="url(#a334155)"/>
+  <rect x="560" y="250" width="160" height="104" rx="8" fill="#f9fafb" stroke="#9ca3af" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <text x="640.0" y="284.0" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="middle">Not performed</text>
+  <text x="640.0" y="301.0" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="middle">LVS</text>
+  <text x="640.0" y="316.0" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="middle">parasitic extraction</text>
+  <text x="640.0" y="331.0" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="middle">post-layout sim</text>
+  <rect x="30" y="370" width="940" height="50" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="46" y="391" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">Report: “no critical issues” in DRC; the remaining flags are foundry density/coverage rules from the small cell footprints.</text>
+  <text x="46" y="409" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">They were left unresolved on purpose (fill could add unknown parasitics). A tape-out would require fill or a waiver.</text>
+</svg>

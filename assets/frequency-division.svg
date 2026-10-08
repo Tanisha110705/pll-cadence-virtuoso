@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 430" width="980" height="430" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">frequency-division.svg</title>
+  <desc id="d">Conceptual square waves showing successive halving of frequency and a table of stage frequencies for a 2.56 GHz input.</desc>
+  <defs><marker id="a15803d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#15803d"/></marker><marker id="a1d4ed8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker><marker id="a1f2937" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker><marker id="a334155" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker><marker id="a7c3aed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker><marker id="a9ca3af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9ca3af"/></marker><marker id="ac2410c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c2410c"/></marker></defs>
+  <rect x="0.5" y="0.5" width="979" height="429" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="24" y="36" font-size="18" font-weight="bold" fill="#1f2937" text-anchor="start">Frequency division — conceptual timing relationship</text>
+  <text x="24" y="58" font-size="12.5" font-weight="normal" fill="#5b6472" text-anchor="start">Illustration only (not simulation data). Real waveforms: simulations/divider</text>
+  <text x="136" y="113" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="end">fin</text>
+  <polyline points="150.0,121.0 150.0,95.0 165.0,95.0 165.0,121.0 180.0,121.0 180.0,95.0 195.0,95.0 195.0,121.0 210.0,121.0 210.0,95.0 225.0,95.0 225.0,121.0 240.0,121.0 240.0,95.0 255.0,95.0 255.0,121.0 270.0,121.0 270.0,95.0 285.0,95.0 285.0,121.0 300.0,121.0 300.0,95.0 315.0,95.0 315.0,121.0 330.0,121.0 330.0,95.0 345.0,95.0 345.0,121.0 360.0,121.0 360.0,95.0 375.0,95.0 375.0,121.0 390.0,121.0 390.0,95.0 405.0,95.0 405.0,121.0 420.0,121.0 420.0,95.0 435.0,95.0 435.0,121.0 450.0,121.0 450.0,95.0 465.0,95.0 465.0,121.0 480.0,121.0 480.0,95.0 495.0,95.0 495.0,121.0 510.0,121.0 510.0,95.0 525.0,95.0 525.0,121.0 540.0,121.0 540.0,95.0 555.0,95.0 555.0,121.0 570.0,121.0 570.0,95.0 585.0,95.0 585.0,121.0 600.0,121.0 600.0,95.0 615.0,95.0 615.0,121.0 630.0,121.0" fill="none" stroke="#1d4ed8" stroke-width="1.8"/>
+  <text x="136" y="168" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="end">fin/2</text>
+  <polyline points="150.0,176.0 150.0,150.0 180.0,150.0 180.0,176.0 210.0,176.0 210.0,150.0 240.0,150.0 240.0,176.0 270.0,176.0 270.0,150.0 300.0,150.0 300.0,176.0 330.0,176.0 330.0,150.0 360.0,150.0 360.0,176.0 390.0,176.0 390.0,150.0 420.0,150.0 420.0,176.0 450.0,176.0 450.0,150.0 480.0,150.0 480.0,176.0 510.0,176.0 510.0,150.0 540.0,150.0 540.0,176.0 570.0,176.0 570.0,150.0 600.0,150.0 600.0,176.0 630.0,176.0" fill="none" stroke="#1d4ed8" stroke-width="1.8"/>
+  <text x="136" y="223" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="end">fin/4</text>
+  <polyline points="150.0,231.0 150.0,205.0 210.0,205.0 210.0,231.0 270.0,231.0 270.0,205.0 330.0,205.0 330.0,231.0 390.0,231.0 390.0,205.0 450.0,205.0 450.0,231.0 510.0,231.0 510.0,205.0 570.0,205.0 570.0,231.0 630.0,231.0" fill="none" stroke="#1d4ed8" stroke-width="1.8"/>
+  <text x="136" y="278" font-size="12.5" font-weight="bold" fill="#1f2937" text-anchor="end">fin/8</text>
+  <polyline points="150.0,286.0 150.0,260.0 270.0,260.0 270.0,286.0 390.0,286.0 390.0,260.0 510.0,260.0 510.0,286.0 630.0,286.0" fill="none" stroke="#1d4ed8" stroke-width="1.8"/>
+  <text x="390.0" y="309" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="middle">⋮  stages 4–6 (÷16, ÷32, ÷64)</text>
+  <text x="136" y="355" font-size="12.5" font-weight="bold" fill="#15803d" text-anchor="end">fin/128</text>
+  <polyline points="150,363 150,337 630,337" fill="none" stroke="#15803d" stroke-width="1.8"/>
+  <text x="390.0" y="357" font-size="11" font-weight="normal" fill="#15803d" text-anchor="middle">one half-period of fout spans 64 input periods</text>
+  <text x="690" y="100" font-size="13" font-weight="bold" fill="#1f2937" text-anchor="start">Stage outputs for the design point</text>
+  <text x="690" y="118" font-size="11" font-weight="normal" fill="#5b6472" text-anchor="start">(arithmetic from report values)</text>
+  <line x1="690" y1="153" x2="940" y2="153" stroke="#e5e7eb"/>
+  <text x="690" y="146" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">VCO / fin</text>
+  <text x="940" y="146" font-size="12" font-weight="bold" fill="#1f2937" text-anchor="end">2.56 GHz</text>
+  <line x1="690" y1="177" x2="940" y2="177" stroke="#e5e7eb"/>
+  <text x="690" y="170" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">÷2</text>
+  <text x="940" y="170" font-size="12" font-weight="bold" fill="#1f2937" text-anchor="end">1.28 GHz</text>
+  <line x1="690" y1="201" x2="940" y2="201" stroke="#e5e7eb"/>
+  <text x="690" y="194" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">÷4</text>
+  <text x="940" y="194" font-size="12" font-weight="bold" fill="#1f2937" text-anchor="end">640 MHz</text>
+  <line x1="690" y1="225" x2="940" y2="225" stroke="#e5e7eb"/>
+  <text x="690" y="218" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">÷8</text>
+  <text x="940" y="218" font-size="12" font-weight="bold" fill="#1f2937" text-anchor="end">320 MHz</text>
+  <line x1="690" y1="249" x2="940" y2="249" stroke="#e5e7eb"/>
+  <text x="690" y="242" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">÷16</text>
+  <text x="940" y="242" font-size="12" font-weight="bold" fill="#1f2937" text-anchor="end">160 MHz</text>
+  <line x1="690" y1="273" x2="940" y2="273" stroke="#e5e7eb"/>
+  <text x="690" y="266" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">÷32</text>
+  <text x="940" y="266" font-size="12" font-weight="bold" fill="#1f2937" text-anchor="end">80 MHz</text>
+  <line x1="690" y1="297" x2="940" y2="297" stroke="#e5e7eb"/>
+  <text x="690" y="290" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">÷64</text>
+  <text x="940" y="290" font-size="12" font-weight="bold" fill="#1f2937" text-anchor="end">40 MHz</text>
+  <line x1="690" y1="321" x2="940" y2="321" stroke="#e5e7eb"/>
+  <text x="690" y="314" font-size="12" font-weight="normal" fill="#1f2937" text-anchor="start">÷128 (FB)</text>
+  <text x="940" y="314" font-size="12" font-weight="bold" fill="#15803d" text-anchor="end">20 MHz = Fref</text>
+  <text x="690" y="358" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="start">Each toggle stage halves the frequency.</text>
+  <text x="690" y="376" font-size="11.5" font-weight="normal" fill="#5b6472" text-anchor="start">Seven stages: 2^7 = 128.</text>
+  <text x="24" y="412" font-size="11.5" font-weight="bold" fill="#c2410c" text-anchor="start">Conceptual timing relationship — idealised waveforms with no propagation delay; not measured simulation data.</text>
+</svg>
